@@ -50,12 +50,24 @@
             flex: 1;
             min-width: 250px;
             transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .product-card:hover {
             border-color: #00ff88;
             box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
             transform: translateY(-5px);
         }
+        
+        /* 新增：控制卡片里产品Logo大小的样式 */
+        .product-img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
         .product-card h2 {
             color: #fff;
             margin-top: 0;
@@ -88,12 +100,16 @@
     <div class="products-container">
         <div class="product-card">
             <div class="tag">即将发布</div>
+            <!-- 这里插入了效果器的Logo -->
+            < img src="pedal.png" alt="光棱效果器" class="product-img">
             <h2>光棱系列效果器</h2>
             <p>突破传统的失真与调制音色。极致的金属切割外壳，搭配极光 LED 呼吸灯效，唤醒你的指尖灵感。</p >
         </div>
 
         <div class="product-card">
             <div class="tag">研发中</div>
+            <!-- 这里插入了音箱的Logo -->
+            < img src="speaker.png" alt="极光声学音箱" class="product-img">
             <h2>极光声学音箱</h2>
             <p>听见光的声音。采用定制级同轴单元与独特的声学折射腔体，带来极具空间感与沉浸感的听觉盛宴。</p >
         </div>
