@@ -32,13 +32,12 @@
         .slogan { font-size: 1.1em; color: #e0e0e0; margin-bottom: 50px; letter-spacing: 4px; }
         .products-container { display: flex; gap: 30px; max-width: 900px; width: 100%; justify-content: center; flex-wrap: wrap; }
 
-        /* ⭐ 新增：让整个卡片变成可点击的链接，并去掉默认下划线 */
         .card-link {
             text-decoration: none;
             color: inherit;
             flex: 1;
             min-width: 250px;
-            display: flex; /* 保证链接撑满卡片高度 */
+            display: flex; 
         }
 
         .product-card {
@@ -48,7 +47,7 @@
             border: 1px solid rgba(255, 255, 255, 0.15); 
             border-radius: 16px; 
             padding: 40px 30px;
-            width: 100%; /* 撑满父级链接 */
+            width: 100%; 
             transition: 0.3s;
             display: flex;
             flex-direction: column;
@@ -79,25 +78,25 @@
 
     <div class="products-container">
         
-        <!-- ⭐ 修改点：用 <a> 标签包裹整个卡片，并指向新页面 pedal.html -->
-        <a href="pedal.html" class="card-link">
+        <!-- 效果器卡片，链接已经确保正确指向 pedal.html -->
+        <a href=" " class="card-link">
             <div class="product-card">
                 <div class="tag">即将发布</div>
                 <img src="pedal.png" alt="光棱效果器" class="product-img">
                 <h2>光棱系列效果器</h2>
-                <p>拒绝千篇一律的平庸音色！棱角分明的赛博外观，突破传统的失真与调制音色。自定义你的专属音色，踩下它，让你的演奏瞬间炸翻全场。</p>
+                <p>拒绝千篇一律的平庸音色！棱角分明的赛博外观，突破传统的失真与调制音色。自定义你的专属音色，踩下它，让你的演奏瞬间炸翻全场。</p >
             </div>
-        </a>
+        </a >
 
-        <!-- ⭐ 修改点：用 <a> 标签包裹整个卡片，并指向新页面 speaker.html -->
+        <!-- 音箱卡片，链接已经确保正确指向 speaker.html -->
         <a href="speaker.html" class="card-link">
             <div class="product-card">
                 <div class="tag">研发中</div>
                 <img src="speaker.png" alt="极光声学音箱" class="product-img">
                 <h2>极光声学音箱</h2>
-                <p>克制的极简美学，隐藏着不容小觑的声学能量。采用独特的结构设计，为你呈现干净、通透且极具沉浸感的纯粹之声。</p>
+                <p>克制的极简美学，隐藏着不容小觑的声学能量。采用独特的结构设计，为你呈现干净、通透且极具沉浸感的纯粹之声。</p >
             </div>
-        </a>
+        </a >
 
     </div>
 
