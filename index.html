@@ -1,0 +1,124 @@
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>极光棱 Aurora Prism | 效果器与音箱</title>
+    <style>
+        /* 基础设置 */
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 顶部 Logo 区域 */
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+            /* 如果你还没传图片，这里会显示裂图，别慌，后面教你传 */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0 0 10px 0;
+            background: linear-gradient(90deg, #00ff88, #ff0055);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+        }
+
+        .slogan {
+            font-size: 1.1em;
+            color: #888;
+            margin-bottom: 50px;
+            letter-spacing: 4px;
+        }
+
+        /* 产品展示区容器 */
+        .products-container {
+            display: flex;
+            gap: 30px;
+            max-width: 900px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap; /* 手机端自动换行 */
+        }
+
+        /* 单个产品卡片 */
+        .product-card {
+            background-color: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 40px 30px;
+            flex: 1;
+            min-width: 250px;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            border-color: #00ff88;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .product-card h2 {
+            color: #fff;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+
+        .product-card p {
+            color: #aaa;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #00ff88;
+            color: #000;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Logo 图片，之后我们会上传替换 -->
+    < img src="logo.png" alt="Aurora Prism Logo" class="logo">
+
+    <h1>极光棱 Aurora Prism</h1>
+    <div class="slogan">重塑声音的维度</div>
+
+    <!-- 产品线展示 -->
+    <div class="products-container">
+        <!-- 卡片1：效果器 -->
+        <div class="product-card">
+            <div class="tag">即将发布</div>
+            <h2>光棱系列效果器</h2>
+            <p>突破传统的失真与调制音色。极致的金属切割外壳，搭配极光 LED 呼吸灯效，唤醒你的指尖灵感。</p >
+        </div>
+
+        <!-- 卡片2：音箱 -->
+        <div class="product-card">
+            <div class="tag">研发中</div>
+            <h2>极光声学音箱</h2>
+            <p>听见光的声音。采用定制级同轴单元与独特的声学折射腔体，带来极具空间感与沉浸感的听觉盛宴。</p >
+        </div>
+    </div>
+
+</body>
+</html>
+```
